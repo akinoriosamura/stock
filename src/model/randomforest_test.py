@@ -12,14 +12,14 @@ Return:
     predict value
 """
 
-class Randomforest():
-    def __init__(self, tree_num, depth):
+class Randomforest_test(object):
+    def __init__(self, tree_num, depth, input_term):
         self.tree_num = tree_num
         self.depth = depth
+        self.input_term = input_term
 
-    def test(self, ctf, values, test_term):
-        input_x = values[-test_term:-1]
+    def test(self, clf, values):
+        input_x = values[-self.input_term:]
         result = [clf.predict(input_x), input_x[-1]]
 
-        return result
-
+        return(result)

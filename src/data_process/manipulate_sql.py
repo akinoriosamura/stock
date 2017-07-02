@@ -3,7 +3,7 @@
 import MySQLdb
 import pandas.io.sql as psql
 
-class  Manipulate_sql():
+class  Manipulate_sql(object):
     """for insert and select data with connecting Mysql"""
     def __init__(
         self,

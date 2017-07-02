@@ -1,6 +1,6 @@
 # -*- coding: utf8 -*-
 
-class Technical_maker():
+class Technical_maker(object):
     """Make each technical value by extract data."""
     def __init__(
             self,

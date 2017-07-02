@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 
-class Send_Mail():
+class Send_Mail(object):
     """Send value and predict result to each byb mail."""
     def __init__(
             self,
